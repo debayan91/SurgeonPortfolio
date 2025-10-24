@@ -1,0 +1,47 @@
+
+{
+  "placeholderImages": [
+    {
+      "id": "dutta_profile",
+      "description": "A professional headshot of Dr. Debashis Dutta.",
+      "imageUrl": "https://picsum.photos/seed/dutta_profile/400/400",
+      "imageHint": "doctor portrait"
+    },
+    {
+      "id": "video_thumb_1",
+      "description": "Thumbnail for a video about vitreous hemorrhage.",
+      "imageUrl": "https://picsum.photos/seed/thumb1/600/400",
+      "imageHint": "surgery operation"
+    },
+    {
+      "id": "video_thumb_2",
+      "description": "Thumbnail for a video about retinal detachment.",
+      "imageUrl": "https://picsum.photos/seed/thumb2/600/400",
+      "imageHint": "medical procedure"
+    },
+    {
+      "id": "video_thumb_3",
+      "description": "Thumbnail for a video on managing a dropped nucleus.",
+      "imageUrl": "https://picsum.photos/seed/thumb3/600/400",
+      "imageHint": "operating room"
+    },
+    {
+      "id": "video_thumb_4",
+      "description": "Thumbnail for a video on IOL repositioning.",
+      "imageUrl": "https://picsum.photos/seed/thumb4/600/400",
+      "imageHint": "surgical tools"
+    },
+    {
+      "id": "video_thumb_5",
+      "description": "Thumbnail for a video on complex cataract surgery.",
+      "imageUrl": "https://picsum.photos/seed/thumb5/600/400",
+      "imageHint": "eye surgery"
+    },
+    {
+      "id": "video_thumb_6",
+      "description": "Thumbnail for a video on traumatic cataract management.",
+      "imageUrl": "https://picsum.photos/seed/thumb6/600/400",
+      "imageHint": "medical equipment"
+    }
+  ]
+}
