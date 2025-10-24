@@ -89,16 +89,16 @@
 
   .multicolor-shadow {
     box-shadow:
-      0 0 20px rgba(81, 137, 246, 0.2),
-      /* Light Blue */ 0 0 30px rgba(135, 81, 246, 0.15),
-      /* Purple */ 0 0 40px rgba(246, 81, 169, 0.1); /* Pink */
+      0 0 20px rgba(0, 0, 0, 0.1),
+      0 0 30px rgba(0, 0, 0, 0.05),
+      0 0 40px rgba(0, 0, 0, 0.02);
   }
 
   .dark .multicolor-shadow {
     box-shadow:
-      0 0 20px rgba(81, 137, 246, 0.25),
-      /* Brighter Light Blue */ 0 0 35px rgba(135, 81, 246, 0.2),
-      /* Brighter Purple */ 0 0 50px rgba(246, 81, 169, 0.15); /* Brighter Pink */
+      0 0 20px rgba(255, 255, 255, 0.1),
+      0 0 35px rgba(255, 255, 255, 0.05),
+      0 0 50px rgba(255, 255, 255, 0.02);
   }
 
   .shimmer {
