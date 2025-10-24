@@ -32,7 +32,7 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
           <div className="text-lg font-semibold tracking-wider sm:text-xl">
             <Link href="/" onClick={closeMenu}>Dr. Debashis Dutta</Link>
           </div>
-          <div className="hidden items-center space-x-8 font-light lg:flex">
+          <div className="hidden items-center tracking-wide space-x-8 font-light lg:flex">
             <Link href="/profile" className="transition-colors hover:text-primary nav-link">Surgeon's Profile</Link>
             <Link href="/videos" className="transition-colors hover:text-primary nav-link">Video Library</Link>
             <Link href="/faq" className="transition-colors hover:text-primary nav-link">FAQs for Patients</Link>
@@ -46,8 +46,9 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
               aria-label="Toggle theme"
               className="relative"
             >
-              <Sun className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-              <Moon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+              <Sun className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+              <Moon className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+
             </Button>
             <div className="hidden lg:block">
               <Link href="/videos">
