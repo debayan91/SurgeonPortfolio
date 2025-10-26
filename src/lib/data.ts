@@ -1,4 +1,5 @@
 import { PlaceHolderImages } from './placeholder-images';
+import { videos as youtubeVideos } from './youtube-data';
 
 export type TranscriptItem = {
   time: number;
@@ -387,12 +388,14 @@ const mockUser: User = {
 
 // Simulate API calls
 export async function getVideos(): Promise<Video[]> {
-  return new Promise((resolve) => setTimeout(() => resolve(videos), 200));
+  const allVideos = [...videos, ...youtubeVideos];
+  return new Promise((resolve) => setTimeout(() => resolve(allVideos), 200));
 }
 
 export async function getVideoById(id: string): Promise<Video | undefined> {
+  const allVideos = [...videos, ...youtubeVideos];
   return new Promise((resolve) =>
-    setTimeout(() => resolve(videos.find((v) => v.id === id)), 200)
+    setTimeout(() => resolve(allVideos.find((v) => v.id === id)), 200)
   );
 }
 
