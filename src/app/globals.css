@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
+    --font-montserrat: 'Montserrat', sans-serif;
     --background: 240 10% 99%;
     --foreground: 240 6% 10%;
     --card: 240 10% 99%;
@@ -54,7 +57,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground font-light;
+    @apply bg-background text-foreground;
   }
   h1,
   h2,

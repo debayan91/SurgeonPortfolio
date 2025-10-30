@@ -85,13 +85,21 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
                 )}
             >
                 <nav className="container mx-auto flex items-center justify-between">
+                    {/* --- [START] CHANGES HERE --- */}
                     <Link
                         href="/"
                         onClick={closeMenu}
-                        className="text-lg font-semibold tracking-wider sm:text-xl font-serif" // Use the serif font for the name
+                        className="flex flex-col leading-none" // Use flex-col to stack name and title
                     >
-                        Dr. Debashis Dutta
+                        <span className="text-lg tracking-wider sm:text-xl font-serif">
+                            <span className="font-semibold">Dr. Debashis</span>
+                            <span className="font-light"> Dutta</span>
+                        </span>
+                        <span className="text-xs font-light tracking-widest text-muted-foreground uppercase">
+                            Consultant Surgeon
+                        </span>
                     </Link>
+                    {/* --- [END] CHANGES HERE --- */}
 
                     {/* --- Desktop Navigation --- */}
                     <div className="hidden items-center tracking-wide space-x-8 lg:flex">
@@ -203,7 +211,7 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
         MAIN CONTENT
         =====================================
       */}
-            <main className="flex-grow pt-24 sm:pt-28">
+            <main className="flex-grow pt-28 sm:pt-32"> {/* Increased padding slightly for new logo */}
                 <div className="container mx-auto px-6">
                     {children}
                 </div>
@@ -215,15 +223,22 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
       */}
             <footer className="py-12 mt-20 border-t bg-muted/20">
                 <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-muted-foreground text-sm">
+                    {/* --- [START] CHANGES HERE --- */}
                     {/* Column 1: Brand */}
                     <div className="flex flex-col items-center md:items-start text-center md:text-left">
-                        <h3 className="font-serif text-lg font-semibold text-foreground">
-                            Dr. Debashis Dutta
+                        <h3 className="font-serif text-lg text-foreground leading-tight">
+                            <span className="font-semibold">Dr. Debashis</span>
+                            <span className="font-light"> Dutta</span>
                         </h3>
-                        <p className="mt-2 font-light">
+                        <span className="text-xs font-light tracking-widest text-muted-foreground uppercase">
+                            Consultant Surgeon
+                        </span>
+                        <p className="mt-4 font-light">
                             &copy; {new Date().getFullYear()} All Rights Reserved.
                         </p>
                     </div>
+                    {/* --- [END] CHANGES HERE --- */}
+
 
                     {/* Column 2: Quick Links */}
                     <div className="flex flex-col items-center md:items-start">
